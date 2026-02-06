@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/cornerstone-logo.png" alt="Atman Design System" width="320" />
+  <img src="img/cornerstone-logo.png" alt="Cornerstone" width="320" />
 </p>
 
 # Cornerstone
