@@ -8,10 +8,6 @@
 
 Cornerstone is a structured process for building projects with AI assistance. It transforms rough ideas into well-defined specifications, actionable roadmaps, and finished products.
 
-<p align="center">
-  <img src="img/cornerstone-logo.svg" alt="Atman Design System" width="320" />
-</p>
-
 ## Why Cornerstone?
 
 Building with AI works best when:

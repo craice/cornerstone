@@ -26,7 +26,7 @@ Cornerstone has 5 phases:
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  DISCOVERY  │ ──▶ │    SPEC     │ ──▶ │   ROADMAP   │ ──▶ │    SETUP    │ ──▶ │  EXECUTION  │
+│  DISCOVERY  │ ──> │    SPEC     │ ──> │   ROADMAP   │ ──> │    SETUP    │ ──> │  EXECUTION  │
 │             │     │             │     │             │     │             │     │             │
 │ Define the  │     │ Document    │     │ Break into  │     │ Prepare     │     │ Build phase │
 │ idea        │     │ everything  │     │ phases      │     │ AI context  │     │ by phase    │
