@@ -63,8 +63,7 @@ You start with an idea — it can be rough, incomplete, even just a feeling. Thr
 Prompt an AI assistant with your idea and explicitly ask for questions:
 
 ```
-I want to create [brief description of your idea]. 
-Help me structure this. Ask questions to understand better.
+I want to create [brief description of your idea]. Help me structure this. Ask questions to understand better.
 ```
 
 **Important:** Don't rush this phase. Good questions lead to good specifications. Let the AI ask multiple rounds of questions until the vision is clear.
@@ -101,8 +100,7 @@ Based on the Discovery phase, the AI generates a detailed specification document
 After Discovery is complete:
 
 ```
-Based on our conversation, create a complete SPECIFICATION.md 
-that captures everything we defined. Be comprehensive.
+Based on our conversation, create a complete SPECIFICATION.md that captures everything we defined. Be comprehensive.
 ```
 
 ### Review Checklist
@@ -180,9 +178,7 @@ Create an AI.md file that gives any AI tool the context it needs to work on your
 ### How to Generate
 
 ```
-Create an AI.md file with instructions for AI tools to work on this project.
-Include everything an AI would need to understand context, conventions, 
-and constraints. Reference SPECIFICATION.md and ROADMAP.md.
+Create an AI.md file with instructions for AI tools to work on this project. Include everything an AI would need to understand context, conventions, and constraints. Reference SPECIFICATION.md and ROADMAP.md.
 ```
 
 ### Project Structure
@@ -193,7 +189,7 @@ After Setup, your project folder should contain:
 your-project/
 ├── AI.md                    # AI context and instructions
 ├── SPECIFICATION.md         # What to build
-├── ROADMAP.md   # How to build it (phases + tasks)
+├── ROADMAP.md               # How to build it (phases + tasks)
 └── ... (project files will be added during execution)
 ```
 
