@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/atman-logo-full.svg" alt="Atman Design System" width="320" />
+  <img src="img/cornerstone-logo.svg" alt="Atman Design System" width="320" />
 </p>
 
 # Cornerstone
@@ -7,6 +7,10 @@
 > From idea to implementation through human-AI collaboration
 
 Cornerstone is a structured process for building projects with AI assistance. It transforms rough ideas into well-defined specifications, actionable roadmaps, and finished products.
+
+<p align="center">
+  <img src="img/cornerstone-logo.svg" alt="Atman Design System" width="320" />
+</p>
 
 ## Why Cornerstone?
 
