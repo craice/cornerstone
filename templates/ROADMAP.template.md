@@ -2,15 +2,17 @@
 
 > A phased approach to building [Project Name]
 
+*Architecture analogy: These are the construction documents — detailed blueprints the builder follows.*
+
 ---
 
 ## About This Document
 
 This document serves two purposes:
 
-1. **Backlog** — A structured list of all tasks required to build [Project Name], organized by phases. Use it to plan work and guide AI tools through development.
+1. **Plan** — A structured list of all tasks required to build [Project Name], organized by phases. Use it to guide AI tools through development.
 
-2. **Checklist & Progress Log** — A living record of what has been completed. As tasks are finished, mark them with `[x]` and document the work in the [Execution Log](#execution-log) section.
+2. **Record** — A living log of what has been completed. As tasks are finished, mark them with `[x]` and document the work in the [Execution Log](#execution-log).
 
 ### How to Use
 
@@ -36,8 +38,8 @@ This document serves two purposes:
 - [ ] Phase 1: [Phase Name]
 - [ ] Phase 2: [Phase Name]
 - [ ] Phase 3: [Phase Name]
-- [ ] Phase 4: [Phase Name]
-- [ ] Phase 5: [Phase Name]
+
+*Add or remove phases as your project requires. There is no "right" number.*
 
 ---
 
@@ -60,8 +62,23 @@ This document serves two purposes:
 
 ### Validation
 
-- [ ] [How to verify this phase is complete]
-- [ ] ...
+*Check each applicable category. Not all categories apply to every phase — mark N/A where irrelevant.*
+
+**Functional:**
+- [ ] [Features work as specified in SPECIFICATION.md]
+- [ ] [Edge cases handled]
+
+**Visual:** *(if applicable)*
+- [ ] [UI matches design tokens / spec requirements]
+- [ ] [Responsive behavior verified]
+
+**Technical:**
+- [ ] [No regressions introduced]
+- [ ] [Code follows project conventions]
+
+**Documentation:**
+- [ ] Execution Log updated
+- [ ] Decisions logged (if any were made)
 
 ---
 
@@ -83,7 +100,18 @@ This document serves two purposes:
 
 ### Validation
 
+**Functional:**
 - [ ] ...
+
+**Visual:** *(if applicable)*
+- [ ] ...
+
+**Technical:**
+- [ ] ...
+
+**Documentation:**
+- [ ] Execution Log updated
+- [ ] Decisions logged (if any were made)
 
 ---
 
@@ -105,55 +133,22 @@ This document serves two purposes:
 
 ### Validation
 
+**Functional:**
 - [ ] ...
+
+**Visual:** *(if applicable)*
+- [ ] ...
+
+**Technical:**
+- [ ] ...
+
+**Documentation:**
+- [ ] Execution Log updated
+- [ ] Decisions logged (if any were made)
 
 ---
 
-## Phase 4: [Phase Name]
-
-**Goal:** [One sentence describing the objective]
-
-### Tasks
-
-- [ ] **4.1** [Task description]
-- [ ] **4.2** [Task description]
-- [ ] **4.3** [Task description]
-- [ ] **4.4** [Task description]
-- [ ] **4.5** [Task description]
-
-### Deliverables
-
-- ...
-
-### Validation
-
-- [ ] ...
-
----
-
-## Phase 5: [Phase Name]
-
-**Goal:** [One sentence describing the objective]
-
-### Tasks
-
-- [ ] **5.1** [Task description]
-- [ ] **5.2** [Task description]
-- [ ] **5.3** [Task description]
-- [ ] **5.4** [Task description]
-- [ ] **5.5** [Task description]
-
-### Deliverables
-
-- ...
-
-### Validation
-
-- [ ] ...
-
----
-
-[Add or remove phases as needed]
+*Add more phases as needed. A small project might have 3 phases; a complex one might have 10. Each phase should be completable in roughly one work session and have a clear, verifiable outcome.*
 
 ---
 
@@ -164,29 +159,36 @@ This document serves two purposes:
 | 1 | [Name] | [N] | [Brief description] |
 | 2 | [Name] | [N] | [Brief description] |
 | 3 | [Name] | [N] | [Brief description] |
-| 4 | [Name] | [N] | [Brief description] |
-| 5 | [Name] | [N] | [Brief description] |
 | **Total** | | **[N]** | |
 
 ---
 
 ## Using This Roadmap with AI
 
-When working with AI coding tools, you can reference specific phases or tasks:
+When working with AI coding tools, reference specific phases or tasks:
 
 **Start a phase:**
 ```
-Execute Phase [N] from DEVELOPMENT_ROADMAP.md following SPECIFICATION.md
+Read AI.md, SPECIFICATION.md, and ROADMAP.md.
+Execute Phase [N]: [Phase Name].
+Mark tasks as complete, update Execution Log, and log any decisions.
 ```
 
 **Complete specific tasks:**
 ```
-Complete tasks [X.X] through [X.X] from DEVELOPMENT_ROADMAP.md
+Complete tasks [X.X] through [X.X] from ROADMAP.md.
 ```
 
 **Validate a phase:**
 ```
-Run validation checks for Phase [N]
+Run validation checks for Phase [N] as defined in the roadmap.
+```
+
+**When something's wrong:**
+```
+Task [X.X] revealed that [describe problem].
+Update SPECIFICATION.md and ROADMAP.md accordingly, then continue.
+Log the change in the AI Decision Log.
 ```
 
 ---
@@ -197,33 +199,21 @@ A summary of what was accomplished in each phase, recorded as work is completed.
 
 ### Phase 1: [Phase Name]
 
-| Date | Time | Summary |
-|------|------|---------|
-| | | |
+| Date | Summary |
+|------|---------|
+| | |
 
 ### Phase 2: [Phase Name]
 
-| Date | Time | Summary |
-|------|------|---------|
-| | | |
+| Date | Summary |
+|------|---------|
+| | |
 
 ### Phase 3: [Phase Name]
 
-| Date | Time | Summary |
-|------|------|---------|
-| | | |
-
-### Phase 4: [Phase Name]
-
-| Date | Time | Summary |
-|------|------|---------|
-| | | |
-
-### Phase 5: [Phase Name]
-
-| Date | Time | Summary |
-|------|------|---------|
-| | | |
+| Date | Summary |
+|------|---------|
+| | |
 
 ---
 
@@ -231,13 +221,11 @@ A summary of what was accomplished in each phase, recorded as work is completed.
 
 Decisions made by AI tools during development. This log documents the AI's reasoning and allows for human review.
 
-| Date | Time | Phase/Task | Decision | Rationale |
-|------|------|------------|----------|-----------|
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+| Date | Phase/Task | Decision | Rationale |
+|------|------------|----------|-----------|
+| | | | |
+| | | | |
+| | | | |
 
 ### What to Log
 
@@ -246,7 +234,9 @@ Decisions made by AI tools during development. This log documents the AI's reaso
 - Additions not explicitly defined in specs
 - Performance or compatibility tradeoffs
 - Naming decisions for undefined elements
+- Spec changes triggered during execution
 
 ---
 
 *Last updated: [Date]*
+*This file follows the Cornerstone process. For more information, see CORNERSTONE.md*

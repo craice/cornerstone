@@ -2,6 +2,16 @@
 
 > [Tagline or brief description]
 
+*Architecture analogy: This is the schematic design — the complete vision of what will be built.*
+
+---
+
+## Changelog
+
+| Version | Date | What Changed | Why |
+|---------|------|-------------|-----|
+| 1.0 | [Date] | Initial specification | Created from Discovery |
+
 ---
 
 ## 1. Overview
@@ -36,12 +46,20 @@
 
 [What problem does this solve? Why does it need to exist?]
 
+> **Writing quality guide:**
+> - BAD: "People need a better way to manage tasks."
+> - GOOD: "Freelance designers juggle 5-10 client projects simultaneously using spreadsheets and sticky notes. They lose track of deadlines, forget follow-ups, and waste ~3 hours/week on status updates that could be automated."
+
 ### Target Audience
 
 [Who is this for? Be specific.]
 
 - Primary: ...
 - Secondary: ...
+
+> **Writing quality guide:**
+> - BAD: "Developers who want a better tool."
+> - GOOD: "Solo developers (1-3 years experience) building side projects, who use VS Code, are comfortable with the terminal, and currently have no structured process for planning before coding."
 
 ### Success Criteria
 
@@ -51,12 +69,20 @@
 - [ ] ...
 - [ ] ...
 
+> **Writing quality guide:**
+> - BAD: "The app should be fast and easy to use."
+> - GOOD: "Page load under 2s on 3G. A new user can create their first project within 3 minutes without reading documentation. 90% of tasks completable without leaving the keyboard."
+
 ### Out of Scope
 
 [What is explicitly NOT part of this project? This prevents scope creep.]
 
 - ...
 - ...
+
+> **Writing quality guide:**
+> - BAD: "Advanced features."
+> - GOOD: "Multi-user collaboration (each project has a single owner). Native mobile apps (web-only, responsive). Offline mode. Integration with third-party project management tools (Jira, Asana)."
 
 ---
 
@@ -108,10 +134,12 @@ project-name/
 
 [How should files, variables, classes, etc. be named?]
 
-- **Files:** ...
-- **Classes/Components:** ...
-- **Variables:** ...
-- **Other:** ...
+| Element | Convention | Example |
+|---------|------------|---------|
+| Files | [e.g., kebab-case] | `my-component.js` |
+| Classes/Components | [e.g., PascalCase] | `MyComponent` |
+| Variables | [e.g., camelCase] | `myVariable` |
+| CSS Classes | [e.g., BEM] | `.block__element--modifier` |
 
 ### Dependencies
 
@@ -123,7 +151,7 @@ project-name/
 
 ---
 
-## 5. Design Tokens (if applicable)
+## 5. Design Tokens *(if applicable)*
 
 ### Colors
 
@@ -179,11 +207,6 @@ project-name/
 **Requirements:**
 - ...
 
-**Example/Structure:**
-```
-...
-```
-
 ---
 
 [Repeat for all features/components]
@@ -194,34 +217,26 @@ project-name/
 
 ### Performance
 
-[Performance targets]
-
 - ...
 - ...
 
 ### Accessibility
-
-[Accessibility requirements]
 
 - ...
 - ...
 
 ### Browser/Platform Support
 
-[What must be supported?]
-
 - ...
 - ...
 
-### Security (if applicable)
-
-[Security requirements]
+### Security *(if applicable)*
 
 - ...
 
 ---
 
-## 8. Content & Copy (if applicable)
+## 8. Content & Copy *(if applicable)*
 
 ### Voice & Tone
 
@@ -241,19 +256,13 @@ project-name/
 
 ### Technical Constraints
 
-[What technical limitations exist?]
-
 - ...
 
 ### Resource Constraints
 
-[Time, budget, team limitations]
-
 - ...
 
 ### External Dependencies
-
-[Things outside your control that affect the project]
 
 - ...
 
@@ -261,16 +270,7 @@ project-name/
 
 ## 10. References & Inspiration
 
-### Inspiration
-
-[Links or descriptions of inspiring projects]
-
 - ...
-
-### Resources
-
-[Useful documentation, tutorials, etc.]
-
 - ...
 
 ---
@@ -295,3 +295,4 @@ project-name/
 ---
 
 *Last updated: [Date]*
+*This file follows the Cornerstone process. For more information, see CORNERSTONE.md*

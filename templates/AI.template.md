@@ -1,5 +1,13 @@
 # [Project Name] — AI Instructions
 
+*Architecture analogy: This is the site preparation — the briefing document the builder receives before breaking ground.*
+
+**Last synced with:** SPECIFICATION.md v1.0 | ROADMAP.md v1.0
+
+> **Sync rule:** This file must be reviewed every time SPECIFICATION.md or ROADMAP.md is updated. Check if principles, references, or key values have shifted. Update the version numbers above after each sync.
+
+---
+
 ## Project Overview
 
 [2-3 sentences describing the project. What is it? What's the goal?]
@@ -7,23 +15,23 @@
 **Key Facts:**
 - **Author:** [Name]
 - **Type:** [Type of project]
-- **Stack:** [Main technologies]
+- **Stack:** [Main technologies — brief, see SPECIFICATION.md §4 for details]
 
 ## Key Files
 
 | File | Purpose |
 |------|---------|
-| `SPECIFICATION.md` | Complete project specification |
-| `DEVELOPMENT_ROADMAP.md` | Phased task list with logs |
-| `AI.md` | This file — AI context and instructions |
+| `SPECIFICATION.md` | Complete project specification — the source of truth |
+| `ROADMAP.md` | Phased task list with execution and decision logs |
+| `AI.md` | This file — how to work on this project |
 
-**Always read SPECIFICATION.md and DEVELOPMENT_ROADMAP.md before starting any work.**
+**Always read SPECIFICATION.md and ROADMAP.md before starting any work.**
 
 ---
 
 ## Core Principles
 
-Rules that must never be violated:
+Rules that must never be violated, regardless of context:
 
 1. **[Principle 1]** — [Description]
 2. **[Principle 2]** — [Description]
@@ -33,69 +41,36 @@ Rules that must never be violated:
 
 ---
 
-## Technical Stack
-
-| Layer | Technology | Notes |
-|-------|------------|-------|
-| Language | [e.g., HTML, CSS, Python] | |
-| Framework | [e.g., React, Django, None] | |
-| Database | [e.g., PostgreSQL, None] | |
-| Hosting | [e.g., GitHub Pages, AWS] | |
-| Other | [e.g., specific libraries] | |
-
----
-
-## File Structure
-
-```
-project-name/
-├── [file or folder]
-├── [file or folder]
-├── [file or folder]
-└── [file or folder]
-```
-
-### File Purposes
-
-- `[filename]` — [purpose]
-- `[filename]` — [purpose]
-- `[folder/]` — [purpose]
-
----
-
-## Naming Conventions
-
-| Element | Convention | Example |
-|---------|------------|---------|
-| Files | [e.g., kebab-case] | `my-component.js` |
-| Classes/Components | [e.g., PascalCase] | `MyComponent` |
-| Variables | [e.g., camelCase] | `myVariable` |
-| CSS Classes | [e.g., BEM] | `.block__element--modifier` |
-| Constants | [e.g., UPPER_SNAKE] | `MAX_COUNT` |
-
----
-
 ## Working Process
 
 ### Before Starting a Phase
 
-1. Read the relevant section in SPECIFICATION.md
-2. Review all tasks for the phase in DEVELOPMENT_ROADMAP.md
+1. Read SPECIFICATION.md (or relevant sections)
+2. Review all tasks for the phase in ROADMAP.md
 3. Identify any dependencies or prerequisites
+4. Confirm understanding before proceeding
 
 ### During Development
 
 1. Follow the specification exactly
 2. Complete tasks in order when possible
 3. Mark tasks as complete: `- [x] Task description`
-4. Stop and clarify if something is ambiguous
+4. **Stop and ask** if something is ambiguous — don't guess
 
 ### After Completing a Phase
 
 1. Run validation checks
-2. Update the Execution Log with date, time, and summary
+2. Update the Execution Log with date and summary
 3. Log any decisions in the AI Decision Log
 4. Verify all deliverables exist
+
+### When Something's Wrong
+
+1. Stop and flag the issue
+2. Suggest a fix or ask for direction
+3. If the spec needs updating, say so explicitly
+4. Log the change in the AI Decision Log
+5. Continue from where the change matters
 
 ---
 
@@ -103,12 +78,12 @@ project-name/
 
 ### Execution Log Format
 
-After completing a phase, add an entry:
+After completing a phase, add an entry to ROADMAP.md:
 
 ```markdown
-| Date | Time | Summary |
-|------|------|---------|
-| YYYY-MM-DD | HH:MM | Brief description of what was accomplished |
+| Date | Summary |
+|------|---------|
+| YYYY-MM-DD | Brief description of what was accomplished |
 ```
 
 ### AI Decision Log Format
@@ -116,9 +91,9 @@ After completing a phase, add an entry:
 When making a decision not explicitly defined in specs:
 
 ```markdown
-| Date | Time | Phase/Task | Decision | Rationale |
-|------|------|------------|----------|-----------|
-| YYYY-MM-DD | HH:MM | [Task ID] | [What was decided] | [Why] |
+| Date | Phase/Task | Decision | Rationale |
+|------|------------|----------|-----------|
+| YYYY-MM-DD | [Task ID] | [What was decided] | [Why] |
 ```
 
 ### When to Log Decisions
@@ -128,6 +103,7 @@ When making a decision not explicitly defined in specs:
 - Adding something not explicitly defined
 - Making performance or compatibility tradeoffs
 - Naming something not named in specs
+- Changing or deviating from the spec
 
 ---
 
@@ -135,84 +111,73 @@ When making a decision not explicitly defined in specs:
 
 Before considering any phase complete:
 
-- [ ] [Validation check 1]
-- [ ] [Validation check 2]
-- [ ] [Validation check 3]
-- [ ] [Validation check 4]
-- [ ] [Validation check 5]
-
----
-
-## Commands Reference
-
-### Starting Work
-
-```
-Read AI.md, SPECIFICATION.md, and DEVELOPMENT_ROADMAP.md.
-Confirm you understand the project before proceeding.
-```
-
-### Executing a Phase
-
-```
-Execute Phase [N]: [Phase Name] from DEVELOPMENT_ROADMAP.md.
-Follow SPECIFICATION.md. Mark tasks complete. Update logs.
-```
-
-### Specific Tasks
-
-```
-Complete tasks [X.X] through [X.X] from DEVELOPMENT_ROADMAP.md.
-```
-
-### Validation
-
-```
-Run validation checks for Phase [N] as defined in the roadmap.
-```
+- [ ] All tasks for the phase are marked complete
+- [ ] [Project-specific validation check 1]
+- [ ] [Project-specific validation check 2]
+- [ ] [Project-specific validation check 3]
+- [ ] Execution Log is updated
+- [ ] Decisions are logged (if any were made)
 
 ---
 
 ## Do's
 
 - ✓ Follow the specification exactly
-- ✓ Use the defined naming conventions
-- ✓ Keep code/content clean and readable
+- ✓ Read context files before every work session
+- ✓ Stop and ask when something is unclear
 - ✓ Document decisions in the AI Decision Log
-- ✓ Ask for clarification when specs are ambiguous
 - ✓ Validate work before marking complete
+- ✓ Flag spec issues instead of guessing
 
 ## Don'ts
 
-- ✗ [Don't do this]
-- ✗ [Don't do this]
-- ✗ [Don't do this]
-- ✗ [Don't do this]
-- ✗ [Don't do this]
-- ✗ Skip logging requirements
+- ✗ Don't assume — ask
+- ✗ Don't skip logging requirements
+- ✗ Don't add features not in the specification
+- ✗ Don't deviate from naming conventions (see SPECIFICATION.md §4)
+- ✗ [Project-specific don't]
+- ✗ [Project-specific don't]
 
 ---
 
 ## Quick Reference
 
-### Key Values/Tokens (if applicable)
+### Commands
+
+**Start work:**
+```
+Read AI.md, SPECIFICATION.md, and ROADMAP.md.
+Confirm you understand the project before proceeding.
+```
+
+**Execute a phase:**
+```
+Execute Phase [N]: [Phase Name] from ROADMAP.md.
+Follow SPECIFICATION.md. Mark tasks complete. Update logs.
+```
+
+**Specific tasks:**
+```
+Complete tasks [X.X] through [X.X] from ROADMAP.md.
+```
+
+**Validate:**
+```
+Run validation checks for Phase [N] as defined in the roadmap.
+```
+
+### Key Values *(if applicable)*
 
 ```
 [Include frequently referenced values here for quick access]
 [e.g., primary color, main font, base spacing unit]
 ```
 
-### Common Patterns (if applicable)
-
-```
-[Include code patterns that should be reused]
-```
-
 ---
 
 ## Notes
 
-[Any additional context that helps AI understand the project]
+[Any additional context that helps AI understand the project — things that don't fit elsewhere]
 
 ---
 
