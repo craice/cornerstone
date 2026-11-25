@@ -629,7 +629,7 @@ A: Because AI coding tools read AGENTS.md automatically. A custom name only work
 
 ## Credits
 
-Cornerstone was developed by Rafael Craice through practical application on real projects — most notably [Purissimo](https://craice.github.io/purissimo/) — refining the process through iteration.
+Cornerstone was developed by [Rafael Craice](https://craice.me) through practical application on real projects — most notably [Purissimo](https://craice.github.io/purissimo/) — refining the process through iteration.
 
 The framework draws on principles from architectural practice, product design, and the lived experience of building things with AI.
 

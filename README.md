@@ -93,7 +93,7 @@ Cornerstone was refined building [Purissimo](https://craice.github.io/purissimo/
 
 ## Credits
 
-Developed by [Rafael Craice](https://github.com/craice) — product designer at the intersection of design, product, and technology.
+Developed by [Rafael Craice](https://craice.me) — product designer at the intersection of design, product, and technology.
 
 ## License
 
