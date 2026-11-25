@@ -1,0 +1,13 @@
+{
+  "name": "cornerstone",
+  "description": "Slash commands for the Cornerstone process: Discovery, Specification, Prototype, Roadmap, Setup and Execution, using the Cornerstone templates and prompts.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rafael Craice",
+    "url": "https://github.com/craice"
+  },
+  "homepage": "https://github.com/craice/cornerstone",
+  "repository": "https://github.com/craice/cornerstone",
+  "license": "MIT",
+  "icon": "img/cornerstone-logo.png"
+}

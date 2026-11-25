@@ -1,0 +1,15 @@
+{
+  "name": "cornerstone",
+  "description": "The Cornerstone planning framework for building projects with AI.",
+  "owner": {
+    "name": "Rafael Craice",
+    "url": "https://github.com/craice"
+  },
+  "plugins": [
+    {
+      "name": "cornerstone",
+      "source": "./",
+      "description": "Slash commands for the Cornerstone planning process."
+    }
+  ]
+}

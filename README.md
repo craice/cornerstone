@@ -44,6 +44,29 @@ DISCOVERY → SPECIFICATION → PROTOTYPE → ROADMAP → SETUP → EXECUTION
 
 Or paste the [One-Prompt Kick-off](PROMPTS.md#one-prompt-kick-off) to run Discovery through Setup in a single conversation. Every prompt lives in `PROMPTS.md`.
 
+## Using with Claude Code *(optional)*
+
+Cornerstone works with any AI tool — the files are the framework. If you use Claude Code, the plugin adds a slash command for each step, using the same templates and prompts:
+
+```
+/plugin marketplace add craice/cornerstone
+/plugin install cornerstone@cornerstone
+```
+
+| Command | What it does |
+|---------|--------------|
+| `/cornerstone:start [idea]` | Full kick-off: Discovery through Setup |
+| `/cornerstone:discovery [idea]` | Interview across the 6 dimensions, save DISCOVERY.md |
+| `/cornerstone:spec [lite]` | Generate SPECIFICATION.md (full or one-page) |
+| `/cornerstone:prototype [what to test]` | Minimal, disposable prototype |
+| `/cornerstone:roadmap` | Generate ROADMAP.md with Current State |
+| `/cornerstone:setup` | Generate AGENTS.md |
+| `/cornerstone:resume` | Start a session from Current State |
+| `/cornerstone:phase [N or 2.1-2.4]` | Execute a phase or a range of tasks |
+| `/cornerstone:validate [N]` | Run a phase's validation checks |
+| `/cornerstone:pause` | End a session and update Current State |
+| `/cornerstone:adopt` | Adopt Cornerstone in a project already in progress |
+
 ## Files
 
 ```
@@ -53,6 +76,8 @@ cornerstone/
 ├── README.md                          # This file
 ├── VISUAL_OVERVIEW.md                 # Diagrams and visual reference
 ├── LICENSE
+├── .claude-plugin/                   # Claude Code plugin manifest (optional)
+├── skills/                            # Claude Code slash commands (optional)
 └── templates/
     ├── DISCOVERY.template.md          # Structured discovery checklist
     ├── SPECIFICATION.template.md      # What to build
