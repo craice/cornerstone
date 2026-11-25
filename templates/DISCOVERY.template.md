@@ -24,14 +24,11 @@ This template guides the Discovery conversation between you and an AI assistant.
 
 ### Kick-off Prompt
 
-```
-I want to create [your idea in 1-2 sentences].
+Use the Discovery prompt in [PROMPTS.md](https://github.com/craice/cornerstone/blob/main/PROMPTS.md) (Phase 1: Discovery).
 
-Help me define this project using the Cornerstone Discovery process.
-Interview me across these 6 dimensions: Purpose, Audience, Scope,
-Constraints, Quality, and Identity. Ask questions one group at a time.
-Challenge my assumptions when needed.
-```
+### What Happens to This File
+
+Keep it in your project as `DISCOVERY.md` — it records the *why* behind the spec. It is not maintained after Discovery: once SPECIFICATION.md exists, the spec is the source of truth. If they disagree, the spec wins.
 
 ---
 
@@ -194,15 +191,8 @@ Before moving to Specification, verify:
 
 ## Transition to Specification
 
-When Discovery is complete, use this prompt:
-
-```
-Based on our Discovery conversation, create a complete SPECIFICATION.md
-using the Cornerstone Specification template. Capture every decision we made.
-Be comprehensive — this document should be the single source of truth
-for the entire project.
-```
+When Discovery is complete, use the Specification prompt in [PROMPTS.md](https://github.com/craice/cornerstone/blob/main/PROMPTS.md) (Phase 2: Specification).
 
 ---
 
-*This file follows the Cornerstone process. For more information, see CORNERSTONE.md*
+*This file follows the Cornerstone process. For more information, see CORNERSTONE.md. Prompts: [PROMPTS.md](https://github.com/craice/cornerstone/blob/main/PROMPTS.md)*

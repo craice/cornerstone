@@ -6,6 +6,30 @@
 
 ---
 
+## Changelog
+
+| Version | Date | What Changed | Why |
+|---------|------|-------------|-----|
+| 1.0 | [Date] | Initial roadmap | Created from SPECIFICATION.md v1.0 |
+
+*Bump the version when phases or tasks change (not when tasks are checked off). AGENTS.md records which version it was last synced with.*
+
+---
+
+## Current State
+
+*Read this first at the start of every session. Update it at the end of every session.*
+
+| | |
+|---|---|
+| **Last updated** | [YYYY-MM-DD] |
+| **Where we stopped** | [Phase N, task N.N — or "Not started"] |
+| **Next step** | [The very next concrete action] |
+| **Waiting on the human** | [`[human]` tasks or decisions that block progress — or "Nothing"] |
+| **Tried and discarded** | [Approaches that didn't work, so the next session doesn't retry them — or "Nothing"] |
+
+---
+
 ## About This Document
 
 This document serves two purposes:
@@ -20,6 +44,14 @@ This document serves two purposes:
 - **Execution:** Reference specific tasks when working with AI (e.g., "Complete task 2.3")
 - **Tracking:** Mark tasks as complete and log summaries in the Execution Log
 - **Review:** Check the AI Decision Log for decisions made during development
+- **Resuming:** Start every session from [Current State](#current-state)
+
+### Task Markers
+
+| Marker | Meaning |
+|--------|---------|
+| `- [ ] **1.1** ...` | Task for the AI (or anyone) |
+| `- [ ] **1.2** [human] ...` | Only a human can do it — deploys, accounts, payments, publishing, real-world actions. The AI prepares what it can but never marks it complete |
 
 ---
 
@@ -53,7 +85,7 @@ This document serves two purposes:
 - [ ] **1.2** [Task description]
 - [ ] **1.3** [Task description]
 - [ ] **1.4** [Task description]
-- [ ] **1.5** [Task description]
+- [ ] **1.5** [human] [Task only a human can do, if any]
 
 ### Deliverables
 
@@ -165,31 +197,7 @@ This document serves two purposes:
 
 ## Using This Roadmap with AI
 
-When working with AI coding tools, reference specific phases or tasks:
-
-**Start a phase:**
-```
-Read AI.md, SPECIFICATION.md, and ROADMAP.md.
-Execute Phase [N]: [Phase Name].
-Mark tasks as complete, update Execution Log, and log any decisions.
-```
-
-**Complete specific tasks:**
-```
-Complete tasks [X.X] through [X.X] from ROADMAP.md.
-```
-
-**Validate a phase:**
-```
-Run validation checks for Phase [N] as defined in the roadmap.
-```
-
-**When something's wrong:**
-```
-Task [X.X] revealed that [describe problem].
-Update SPECIFICATION.md and ROADMAP.md accordingly, then continue.
-Log the change in the AI Decision Log.
-```
+Prompts for starting, executing, validating, and ending sessions are in [PROMPTS.md](https://github.com/craice/cornerstone/blob/main/PROMPTS.md) (Phase 6: Execution).
 
 ---
 
@@ -219,7 +227,9 @@ A summary of what was accomplished in each phase, recorded as work is completed.
 
 ## AI Decision Log
 
-Decisions made by AI tools during development. This log documents the AI's reasoning and allows for human review.
+Implementation decisions made by AI tools during development. This log documents the AI's reasoning and allows for human review.
+
+> Product and scope decisions don't go here — they go in the Decision Log in SPECIFICATION.md, after the human approves them.
 
 | Date | Phase/Task | Decision | Rationale |
 |------|------------|----------|-----------|
@@ -234,9 +244,8 @@ Decisions made by AI tools during development. This log documents the AI's reaso
 - Additions not explicitly defined in specs
 - Performance or compatibility tradeoffs
 - Naming decisions for undefined elements
-- Spec changes triggered during execution
 
 ---
 
 *Last updated: [Date]*
-*This file follows the Cornerstone process. For more information, see CORNERSTONE.md*
+*This file follows the Cornerstone process. For more information, see CORNERSTONE.md. Prompts: [PROMPTS.md](https://github.com/craice/cornerstone/blob/main/PROMPTS.md)*

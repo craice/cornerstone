@@ -78,14 +78,7 @@ Pick the riskiest or most uncertain parts of SPECIFICATION.md. Don't prototype e
 
 ### Prompt
 
-```
-Based on SPECIFICATION.md, create a lightweight prototype / proof of concept
-that tests [specific aspect]. Keep it minimal and disposable — this is a
-study model, not the final product. Focus on [the riskiest assumption you
-need to validate].
-
-Use real content where possible. Keep it in a single file if you can.
-```
+Use the Prototype prompt in [PROMPTS.md](https://github.com/craice/cornerstone/blob/main/PROMPTS.md) (Phase 3: Prototype / PoC).
 
 ### Prototype Files
 
@@ -139,4 +132,4 @@ After reviewing the prototype, answer these questions:
 
 ---
 
-*This file follows the Cornerstone process. For more information, see CORNERSTONE.md*
+*This file follows the Cornerstone process. For more information, see CORNERSTONE.md. Prompts: [PROMPTS.md](https://github.com/craice/cornerstone/blob/main/PROMPTS.md)*

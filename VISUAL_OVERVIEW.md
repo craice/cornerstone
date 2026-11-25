@@ -13,7 +13,7 @@
 │        │              │              │              │              │              │          │
 │        ▼              ▼              ▼              ▼              ▼              ▼          │
 │   ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐    │
-│   │Discovery │   │SPEC      │   │HTML/CSS  │   │ROADMAP   │   │AI        │   │Working   │    │
+│   │Discovery │   │SPEC      │   │Prototype │   │ROADMAP   │   │AGENTS    │   │Working   │    │
 │   │Checklist │   │.md       │   │files     │   │.md       │   │.md       │   │Product   │    │
 │   └──────────┘   └──────────┘   └──────────┘   └──────────┘   └──────────┘   └──────────┘    │
 │                                                                                              │
@@ -59,15 +59,15 @@
 │   materials, systems                   project definition                        │
 │                                                                                  │
 │   Study Model ·······················> Prototype                                 │
-│   Cardboard maquette to test           HTML/CSS sketch to test                   │
-│   proportions and concept              layout and visual direction               │
+│   Cardboard maquette to test           Minimal sketch to test                    │
+│   proportions and concept              the riskiest assumption                   │
 │                                                                                  │
 │   Construction Documents ············> Roadmap                                   │
 │   Detailed blueprints with             ROADMAP.md — phases, tasks,               │
 │   dimensions and sequences             deliverables, validation                  │
 │                                                                                  │
 │   Site Preparation ··················> Setup                                     │
-│   Survey, utilities, builder           AI.md — context, principles,              │
+│   Survey, utilities, builder           AGENTS.md — context and                   │
 │   instructions                         behavioral rules                          │
 │                                                                                  │
 │   Construction ······················> Execution                                 │
@@ -113,11 +113,11 @@
 ║                                        ▼                                                  ║
 ║  PHASE 3: PROTOTYPE — optional (Study Model)                                              ║
 ║  ┌─────────────────────────────────────────────────────────────────┐                      ║
-║  │  AI creates lightweight HTML/CSS prototype                      │                      ║
-║  │  ├── Test layout and structure                                  │                      ║
-║  │  ├── Test visual direction                                      │                      ║
-║  │  ├── Test component design                                      │                      ║
-║  │  └── Test content hierarchy                                     │                      ║
+║  │  AI creates a minimal, disposable prototype                     │                      ║
+║  │  ├── UI: layout, visual direction                               │                      ║
+║  │  ├── API: data model, integration                               │                      ║
+║  │  ├── CLI: commands, output format                               │                      ║
+║  │  └── Data: transformations, edge cases                          │                      ║
 ║  │                                                                 │                      ║
 ║  │  YOU review — confirms vision or loops back to Spec             │                      ║
 ║  └─────────────────────────────────────────────────────────────────┘                      ║
@@ -126,9 +126,9 @@
 ║  PHASE 4: ROADMAP (Construction Documents)                                                ║
 ║  ┌─────────────────────────────────────────────────────────────────┐                      ║
 ║  │  AI generates ROADMAP.md                                        │                      ║
-║  │  ├── Phase 1: [Tasks 1.1 - 1.n]                                 │                      ║
-║  │  ├── Phase 2: [Tasks 2.1 - 2.n]                                 │                      ║
-║  │  ├── Phase N: [Tasks N.1 - N.n]                                 │                      ║
+║  │  ├── Changelog + Current State                                  │                      ║
+║  │  ├── Phases 1..N: tasks ([human] marked)                        │                      ║
+║  │  ├── Deliverables + validation                                  │                      ║
 ║  │  ├── Execution Log (empty)                                      │                      ║
 ║  │  └── AI Decision Log (empty)                                    │                      ║
 ║  │                                                                 │                      ║
@@ -138,7 +138,7 @@
 ║                                        ▼                                                  ║
 ║  PHASE 5: SETUP (Site Preparation)                                                        ║
 ║  ┌─────────────────────────────────────────────────────────────────┐                      ║
-║  │  AI generates AI.md (behavioral guide, not spec copy)           │                      ║
+║  │  AI generates AGENTS.md (behavioral guide, not spec copy)       │                      ║
 ║  │  ├── Project overview (brief)                                   │                      ║
 ║  │  ├── Core principles (rules)                                    │                      ║
 ║  │  ├── Working process                                            │                      ║
@@ -147,9 +147,10 @@
 ║  │                                                                 │                      ║
 ║  │  Project folder ready:                                          │                      ║
 ║  │  your-project/                                                  │                      ║
-║  │  ├── AI.md                                                      │                      ║
+║  │  ├── AGENTS.md                                                  │                      ║
 ║  │  ├── SPECIFICATION.md                                           │                      ║
 ║  │  ├── ROADMAP.md                                                 │                      ║
+║  │  ├── DISCOVERY.md (optional)                                    │                      ║
 ║  │  └── prototype/ (optional)                                      │                      ║
 ║  └─────────────────────────────────────────────────────────────────┘                      ║
 ║                                        │                                                  ║
@@ -176,6 +177,7 @@
 ║  │  ┌──────────────┐                              │                │                      ║
 ║  │  │ Update Logs  │  ─ Execution Log             │                │                      ║
 ║  │  └──────┬───────┘  ─ AI Decision Log           │                │                      ║
+║  │         │          ─ Current State             │                │                      ║
 ║  │         ▼                                      │                │                      ║
 ║  │  ┌──────────────┐     No    ┌──────────────┐   │                │                      ║
 ║  │  │ More phases? │──────────>│    DONE!     │   │                │                      ║
@@ -193,11 +195,11 @@
 ```
 Phase          Architecture Analogy     Output File           Purpose
 ─────          ────────────────────     ───────────           ───────
-Discovery      Programming Brief        (conversation)        Understand needs through Q&A
+Discovery      Programming Brief        DISCOVERY.md          Understand needs through Q&A
 Specification  Schematic Design         SPECIFICATION.md      Define what to build
-Prototype      Study Model              HTML/CSS files        Test ideas visually (optional)
+Prototype      Study Model              prototype/ files      Test the riskiest idea (optional)
 Roadmap        Construction Documents   ROADMAP.md            Plan how to build it
-Setup          Site Preparation         AI.md                 Prepare AI context
+Setup          Site Preparation         AGENTS.md             Prepare AI context
 Execution      Construction             (project files)       Build the actual product
                                         + Updated logs        Track progress and decisions
 ```

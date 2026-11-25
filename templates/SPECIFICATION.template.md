@@ -12,6 +12,8 @@
 |---------|------|-------------|-----|
 | 1.0 | [Date] | Initial specification | Created from Discovery |
 
+*Bump the version whenever requirements, scope, or principles change. AGENTS.md records which version it was last synced with.*
+
 ---
 
 ## 1. Overview
@@ -286,7 +288,9 @@ project-name/
 
 ## Appendix: Decision Log
 
-[Record key decisions made during specification]
+[Product and scope decisions — what the project is, what's in or out. Only the human approves entries here.]
+
+> Implementation decisions made by AI during execution go in the AI Decision Log in ROADMAP.md. If one of them changes scope or contradicts this spec, it moves here once approved.
 
 | Decision | Choice | Rationale | Date |
 |----------|--------|-----------|------|
@@ -295,4 +299,4 @@ project-name/
 ---
 
 *Last updated: [Date]*
-*This file follows the Cornerstone process. For more information, see CORNERSTONE.md*
+*This file follows the Cornerstone process. For more information, see CORNERSTONE.md. Prompts: [PROMPTS.md](https://github.com/craice/cornerstone/blob/main/PROMPTS.md)*
